@@ -19,6 +19,7 @@ default_args = {
 }
 
 api_key = Variable.get("API_KEY")
+local_path = Variable.get("local_path")
 
 with DAG(
     'daily_csv_to_gcs',

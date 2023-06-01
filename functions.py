@@ -1,11 +1,11 @@
 
 
-def get_data(API_KEY):
+def get_data(API_KEY, LOCAL_PATH):
     from datetime import date
     import pandas as pd
     import requests
 
-    local_path = "D:\\Documents\\raw_curr\\"
+    local_path = LOCAL_PATH
     hoy = date.today()
     hoy_str = hoy.strftime("%Y-%m-%d")
     file = f'raw_{hoy_str}.csv'
