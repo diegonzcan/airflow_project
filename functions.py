@@ -9,7 +9,7 @@ def get_data(API_KEY, LOCAL_PATH):
     hoy = date.today()
     hoy_str = hoy.strftime("%Y-%m-%d")
     file = f'raw_{hoy_str}.csv'
-    full_path = local_path + file
+    full_path = LOCAL_PATH + file
     api_key = API_KEY
     moneda_base = 'MXN'
     target_monedas = ['USD', 'EUR', 'JPY', 'GBP', 'CAD']
