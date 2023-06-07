@@ -37,9 +37,6 @@ def upload_to_gcs():
     file = f'raw_{hoy_str}.csv'
     full_path = local_path + file
 
-   
-    
-
     bucket_name = 'raw_bucket_diego'
     destination_blob_name = f'gs:/raw_bucket_diego/{file}'
 
